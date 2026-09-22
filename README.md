@@ -12,12 +12,12 @@ BOLETA 2025630404
 GRUPO 4CM4 
 FECHA DE ENTREGA 22/09/2026 
 ---
-###indice
+### indice
  practica1-tc/
  README.md
  .gitignore
  requirements.txt
  pytest.ini
  docs/
- [01-entorno.md](docs
+ 01. [01-entorno.md](docs
 /01-entorno.md)
