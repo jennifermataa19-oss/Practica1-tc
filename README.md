@@ -12,7 +12,7 @@ BOLETA 2025630404
 GRUPO 4CM4 
 FECHA DE ENTREGA 22/09/2026 
 ---
-####indice
+###indice
  practica1-tc/
  README.md
  .gitignore
