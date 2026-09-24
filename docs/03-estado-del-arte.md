@@ -1,0 +1,292 @@
+# Ejercicio 3. Estado del arte: cinco textos
+
+---
+
+## Texto 1. Gribkoff (2013)
+
+### Referencia
+
+Gribkoff, E. (2013). *Finite automata and their applications*. Documento asignado para la práctica.
+
+### Problema abordado
+
+El texto presenta diferentes formas en las que los autómatas finitos pueden utilizarse para modelar procesos que reciben una secuencia de símbolos y producen una respuesta.
+
+Una parte importante del documento consiste en diferenciar los autómatas que solamente indican si una cadena pertenece a un lenguaje de aquellos que también pueden producir una salida durante el procesamiento.
+
+### AFD y máquina de Mealy
+
+Un autómata finito determinista (AFD) recibe una cadena símbolo por símbolo y, después de procesarla, determina si la cadena pertenece al lenguaje reconocido por el autómata; su comportamiento se describe mediante estados y transiciones.
+
+Una máquina de Mealy agrega una salida asociada a las transiciones. Por esta razón, no solamente interesa saber en qué estado termina el sistema, sino también qué salida produce mientras procesa la entrada.
+
+Esta diferencia es importante para sistemas como el autocompletado: en un sistema de autocompletado no basta con indicar si una cadena es válida, el sistema necesita producir información durante el procesamiento, por ejemplo, posibles continuaciones de la entrada.
+
+### Máquina expendedora
+
+El texto también presenta una máquina expendedora como ejemplo de un autómata finito.
+
+Si se considera que la máquina no tiene estados de aceptación, entonces ninguna cadena sería aceptada en el sentido tradicional de un lenguaje reconocido por un AFD. Esto muestra que un autómata puede utilizarse para modelar el comportamiento de un sistema aunque su objetivo no sea necesariamente reconocer un lenguaje mediante estados finales.
+
+Una afirmación tomada de un documento de carácter introductorio o educativo no debería utilizarse automáticamente como evidencia científica; si se desea emplear una afirmación sobre el funcionamiento o las aplicaciones de autómatas como respaldo académico, sería conveniente contrastarla con un artículo científico o un libro especializado de teoría de autómatas.
+
+### Relación con la Unidad I
+
+El texto se relaciona directamente con:
+
+- Autómatas finitos.
+- Estados.
+- Transiciones.
+- Lenguajes regulares.
+- Reconocimiento de cadenas.
+- Máquinas de Mealy.
+
+---
+
+## Texto 2. Luna-Benoso et al. (2022)
+
+### Referencia
+
+Luna-Benoso, D., et al. (2022). [Artículo asignado sobre autómatas celulares]. *Computers*, 11(1), 8. https://doi.org/10.3390/computers11010008
+
+### Problema abordado
+
+El artículo estudia un problema utilizando autómatas celulares como modelo computacional; el interés principal consiste en representar un sistema mediante una colección de celdas que evolucionan de acuerdo con reglas locales.
+
+### Autómata celular frente a autómata finito
+
+Aunque ambos modelos utilizan estados y reglas de transición, existe una diferencia importante: en un autómata finito tradicional, el sistema tiene un conjunto finito de estados y procesa una cadena mediante transiciones determinadas por los símbolos de entrada; en un autómata celular existe una colección de celdas, cada celda tiene un estado y su siguiente estado depende de una regla local que considera su vecindad.
+
+| Característica | Autómata finito | Autómata celular |
+|---|---|---|
+| **Unidad principal** | Estado del autómata | Celda |
+| **Evolución** | Transiciones según entrada | Reglas locales |
+| **Vecindad** | No es el elemento central | Es fundamental |
+| **Comportamiento** | Reconocimiento de cadenas | Evolución de un sistema |
+| **Aplicación** | Lenguajes formales | Modelado de sistemas |
+
+### Problema y modelo
+
+El artículo utiliza el autómata celular como una forma de representar la evolución de un sistema.
+
+En lugar de estudiar únicamente si una cadena es aceptada o rechazada, el modelo permite observar cómo cambia el sistema a partir de reglas locales. Esta diferencia es importante porque muestra que la idea de "estado" puede utilizarse en modelos computacionales diferentes.
+
+### Resultado principal
+
+El trabajo muestra que los autómatas celulares pueden utilizarse para representar y analizar el comportamiento del problema estudiado mediante reglas de evolución local.
+
+### Relación con la Unidad I
+
+El artículo se relaciona principalmente con los conceptos de:
+
+- Autómatas.
+- Estados.
+- Reglas de transición.
+- Modelos computacionales.
+
+Su contribución para el curso consiste en permitir comparar un autómata finito con otro tipo de modelo y entender que no todos los autómatas tienen como finalidad principal reconocer lenguajes regulares.
+
+---
+
+## Texto 3. Turing (1936)
+
+### Referencia
+
+Turing, A. M. (1936). On computable numbers, with an application to the Entscheidungsproblem. *Proceedings of the London Mathematical Society*, 2(42), 230–265.
+
+### Problema abordado
+
+El trabajo de Alan Turing estudia el concepto de computabilidad y busca establecer una forma matemática de describir qué significa que un procedimiento pueda ser ejecutado mediante un método mecánico.
+
+### Modelo propuesto
+
+Turing introduce un modelo de cálculo conocido posteriormente como máquina de Turing.
+
+El modelo utiliza una cinta potencialmente ilimitada, un cabezal que puede leer y escribir símbolos y un conjunto de estados que determina las acciones que debe realizar la máquina.
+
+La importancia del modelo está en que permite describir un procedimiento de cálculo mediante reglas precisas.
+
+### Resultado y relación con la computabilidad
+
+El trabajo permitió establecer una formulación matemática del concepto de procedimiento efectivo. La máquina de Turing se convirtió posteriormente en uno de los modelos fundamentales utilizados para estudiar la computabilidad.
+
+### Tesis de Church-Turing
+
+La tesis de Church-Turing establece, de manera resumida, que todo procedimiento que pueda considerarse efectivamente computable puede ser realizado por una máquina de Turing.
+
+Es importante distinguir una tesis de un teorema. No se trata de un teorema matemático porque la expresión "procedimiento efectivamente computable" no es una definición matemática previa que pueda demostrarse equivalente a otra mediante una prueba formal.
+
+La tesis relaciona una noción intuitiva de cálculo efectivo con un modelo matemático.
+
+### Relación con la Unidad I
+
+El texto se relaciona directamente con:
+
+- Máquinas de Turing.
+- Computabilidad.
+- Modelos formales de cálculo.
+- Lenguajes y reconocimiento.
+- Límites de los procedimientos computacionales.
+
+Su importancia para el curso consiste en mostrar cómo los modelos formales permiten estudiar no solamente qué cadenas pueden reconocerse, sino también qué problemas pueden ser computados.
+
+---
+
+## Texto 4. Autómatas finitos aplicados a sistemas químicos
+
+### Referencia
+
+Arredondo, D., & Lakin, M. R. (2021). Robust finite automata in stochastic chemical reaction networks. *Royal Society Open Science*, 8(12), 211310. https://doi.org/10.1098/rsos.211310
+
+### ¿Por qué seleccioné este artículo?
+
+Este artículo fue seleccionado porque utiliza autómatas finitos fuera de una aplicación tradicional de teoría de lenguajes; los autores estudian su utilización como circuitos de control para sistemas biológicos y biomoleculares estocásticos.
+
+El artículo fue publicado en *Royal Society Open Science* en 2021 y tiene DOI propio.
+
+### Problema abordado
+
+El problema consiste en estudiar cómo un sistema biológico o biomolecular puede controlar su comportamiento mediante reglas computacionales.
+
+Los autores proponen utilizar autómatas finitos como circuitos de control dentro de redes de reacciones químicas estocásticas.
+
+En este caso, el autómata no se utiliza solamente para decidir si una palabra pertenece a un lenguaje, sino como una estructura que controla el comportamiento de un sistema físico.
+
+### Método o propuesta
+
+Los autores estudian cómo implementar el comportamiento de un autómata finito mediante redes de reacciones químicas.
+
+El estado del autómata puede interpretarse como parte del estado del sistema químico y las transiciones se relacionan con las reacciones que permiten cambiar entre estados.
+
+La propuesta conecta dos áreas que normalmente se estudian por separado:
+
+> **Teoría de autómatas + Sistemas químicos/biomoleculares**
+
+### Resultado principal
+
+El trabajo muestra que los autómatas finitos pueden utilizarse como mecanismos de control para sistemas químicos estocásticos.
+
+Esto permite utilizar un modelo computacional sencillo para representar comportamientos dentro de sistemas biológicos o biomoleculares.
+
+### Tema de la Unidad I relacionado
+
+El artículo se relaciona directamente con:
+
+- Autómatas finitos.
+- Estados.
+- Transiciones.
+- Comportamiento de sistemas.
+- Reconocimiento y procesamiento de información.
+
+### Contribución al curso
+
+Este artículo resulta especialmente interesante porque demuestra que un autómata finito no tiene que quedarse como un diagrama formado por círculos y flechas.
+
+La estructura matemática del autómata puede utilizarse para representar el comportamiento de un sistema de otra disciplina; por ello, sirve como ejemplo de cómo un concepto estudiado en Teoría de la Computación puede trasladarse a un problema relacionado con química y sistemas biomoleculares.
+
+---
+
+## Texto 5. Autómatas finitos de segundo orden
+
+### Referencia
+
+de Melo, A. A., & de Oliveira Oliveira, M. (2022). Second-order finite automata. *Theory of Computing Systems*, 66, 861–909. https://doi.org/10.1007/s00224-022-10085-w
+
+### Problema abordado
+
+Los autómatas finitos tradicionales se utilizan para representar conjuntos de cadenas. Los autores plantean una extensión de esta idea para representar algo más complejo: conjuntos de conjuntos de cadenas (clases de lenguajes).
+
+El artículo introduce el concepto de **autómata finito de segundo orden**.
+
+### Modelo propuesto
+
+El modelo combina autómatas finitos con *ordered decision diagrams* (ODD).
+
+De esta manera, el autómata no representa directamente una sola colección de cadenas, sino una colección de estructuras que, a su vez, representan lenguajes.
+
+La idea puede visualizarse de manera jerárquica:
+
+```text
+Autómata finito
+      ↓
+Representa estructuras ODD
+      ↓
+Cada ODD representa un lenguaje
+      ↓
+El autómata representa una clase de lenguajes
+```
+
+### Resultado principal
+
+Uno de los resultados principales es que los autómatas finitos de segundo orden pueden llevarse a una forma canónica respecto al lenguaje de segundo orden que representan.
+
+Los autores también muestran propiedades de cerradura para operaciones como unión, intersección y diferencia; además, presentan resultados de decidibilidad para problemas relacionados con intersección e inclusión.
+
+El trabajo también obtiene aplicaciones algorítmicas relacionadas con la minimización del ancho y tamaño de *ordered decision diagrams*; para ciertos casos, estos problemas pueden resolverse mediante algoritmos de complejidad parametrizada fija (FPT).
+
+### Tema de la Unidad I relacionado
+
+El artículo se relaciona con:
+
+- Autómatas finitos.
+- Alfabetos.
+- Cadenas.
+- Lenguajes.
+- Reconocimiento.
+- Determinismo.
+- Minimización.
+- Operaciones sobre lenguajes.
+
+De hecho, el artículo comienza utilizando conceptos básicos como alfabeto, cadena, lenguaje y autómata finito antes de construir el modelo de segundo orden.
+
+### Contribución al curso
+
+Este artículo permite observar que la teoría de autómatas continúa extendiéndose.
+
+Los conceptos básicos de la Unidad I no son solamente definiciones cerradas, sino que pueden utilizarse como punto de partida para construir modelos más complejos.
+
+Además, el artículo conecta los autómatas con problemas de complejidad algorítmica, especialmente relacionados con la minimización de estructuras de decisión.
+
+---
+
+# Comparación de los cinco textos
+
+| Texto | ¿Revisado por pares? | Año | Modelo principal | Área de aplicación |
+|---|---|---:|---|---|
+| **Gribkoff** | No corresponde a un artículo científico revisado por pares | 2013 | AFD y máquinas de Mealy | Sistemas y ejemplos de reconocimiento |
+| **Luna-Benoso et al.** | Sí | 2022 | Autómata celular | Modelado de sistemas |
+| **Turing** | Sí, trabajo histórico publicado en revista científica | 1936 | Máquina de Turing | Computabilidad |
+| **Arredondo & Lakin** | Sí | 2021 | Autómatas finitos | Sistemas químicos y biomoleculares |
+| **de Melo & de Oliveira Oliveira** | Sí | 2022 | Autómatas finitos de segundo orden | Complejidad y representación de clases de lenguajes |
+
+## Comparación general
+
+Los cinco textos parten de una idea común: representar un comportamiento mediante un modelo formal compuesto por estados, reglas o transiciones. Sin embargo, cada trabajo utiliza esta idea con un objetivo diferente.
+
+Gribkoff presenta los autómatas desde una perspectiva más introductoria y relacionada con sistemas que procesan entradas. Turing utiliza un modelo formal para estudiar una cuestión mucho más amplia: qué significa que un problema sea computable. Luna-Benoso et al. muestran una variante diferente mediante autómatas celulares, donde el comportamiento depende de múltiples elementos y de reglas locales.
+
+Los dos artículos seleccionados específicamente para esta práctica muestran aplicaciones y extensiones menos convencionales: Arredondo y Lakin llevan el concepto de autómata finito hacia sistemas químicos y biomoleculares, mientras que de Melo y de Oliveira amplían la representación tradicional de lenguajes mediante autómatas de segundo orden.
+
+Una diferencia importante entre los textos es el propósito: algunos buscan explicar o fundamentar modelos computacionales, mientras que los trabajos recientes buscan extenderlos, encontrar propiedades nuevas o utilizarlos en problemas concretos.
+
+Esto permite observar que la teoría de autómatas continúa siendo una herramienta activa de investigación.
+
+## Problema abierto identificado
+
+Un problema que aparece de manera transversal es encontrar modelos formales que sean suficientemente expresivos para representar sistemas complejos sin que los costos computacionales aumenten demasiado.
+
+Los autómatas finitos tienen la ventaja de ser modelos relativamente sencillos, pero precisamente esa sencillez limita los tipos de comportamientos que pueden representar.
+
+Las investigaciones actuales exploran extensiones del modelo, nuevas estructuras de representación y aplicaciones en otras áreas.
+
+---
+
+# Conclusión
+
+La revisión de los cinco textos permitió observar una evolución desde los conceptos fundamentales de los autómatas hasta investigaciones actuales que modifican o aplican estos modelos.
+
+Los autómatas finitos continúan siendo importantes debido a que permiten representar sistemas mediante un número finito de estados y reglas claramente definidas.
+
+Además, los artículos recientes muestran que los conceptos de la Unidad I pueden utilizarse fuera de los ejemplos tradicionales: su aplicación en sistemas químicos y biomoleculares demuestra que la teoría de la computación puede servir como herramienta para describir procesos de otras áreas científicas, mientras que los autómatas de segundo orden muestran que todavía es posible extender la idea original de reconocer cadenas para estudiar estructuras más complejas, como conjuntos de lenguajes.
+
+En conjunto, los textos revisados permiten relacionar los conceptos vistos en clase con problemas de investigación y aplicaciones actuales.
